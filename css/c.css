@@ -1,0 +1,53 @@
+#searchhere{
+  width: 95%;
+background-color: #f0f0f6;
+border-style: none;
+outline: none;
+}
+.big-circle {
+  width: 8rem;
+  height: 8rem;
+  border: 5px solid #ddd;
+  border-radius: 50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  border-color: #ddd transparent #ddd #ddd;
+  animation: bigcircle 1.2s linear infinite;
+}
+.small-circle {
+  position:relative;
+  width: 5rem;
+  height: 5rem;
+  border: 5px solid #ddd;
+  border-radius: 50%;
+  border-color: #ddd #ddd transparent #ddd;
+}
+
+@keyframes bigcircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width:600px) {
+  #coverImg{
+    width: 80px !important;
+    height:128px !important;
+  }
+  .imgDiv{
+    width: 25% !important;
+    margin-left: 5% !important;
+  }
+  .title{
+    width: 90px !important;
+  }
+  #searchhere{
+    width: 85% !important;
+  }
+
+}
